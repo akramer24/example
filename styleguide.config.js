@@ -1,6 +1,16 @@
 module.exports = {
 	title: 'React Style Guide Example',
-	defaultExample: true,
+	pagePerSection: true,
+	sections: [
+		{
+			name: 'Controls',
+      components: 'src/lib/Controls/**/[A-Z]*.js'
+		},
+		{
+			name: 'Form',
+      components: 'src/lib/Form/**/[A-Z]*.js',
+		}
+	],
 	webpackConfig: {
 		module: {
 			loaders: [
@@ -16,4 +26,4 @@ module.exports = {
 			],
 		},
 	},
-};
+}
